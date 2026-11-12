@@ -1,0 +1,79 @@
+# Nmap 7.94SVN scan initiated Thu Nov 12 19:21:28 2026 as: nmap -sV -O -oN scans/nmap_scan.txt 172.17.0.2
+Nmap scan report for 172.17.0.2
+Host is up (0.000056s latency).
+Not shown: 979 closed tcp ports (reset)
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         vsftpd 2.3.4
+22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+23/tcp   open  telnet      Linux telnetd
+25/tcp   open  smtp        Postfix smtpd
+80/tcp   open  http        Apache httpd 2.2.8 ((Ubuntu) DAV/2)
+111/tcp  open  rpcbind     2 (RPC #100000)
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+512/tcp  open  exec        netkit-rsh rexecd
+513/tcp  open  login
+514/tcp  open  tcpwrapped
+1099/tcp open  java-rmi    GNU Classpath grmiregistry
+1524/tcp open  ingreslock?
+2121/tcp open  ftp         ProFTPD 1.3.1
+3306/tcp open  mysql       MySQL 5.0.51a-3ubuntu5
+5432/tcp open  postgresql  PostgreSQL DB 8.3.0 - 8.3.7
+5900/tcp open  vnc         VNC (protocol 3.3)
+6000/tcp open  X11         (access denied)
+6667/tcp open  irc         UnrealIRCd
+8009/tcp open  ajp13       Apache Jserv (Protocol v1.3)
+8180/tcp open  http        Apache Tomcat/Coyote JSP engine 1.1
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port1524-TCP:V=7.94SVN%I=7%D=11/12%Time=6AF5F59F%P=x86_64-pc-linux-gnu%
+SF:r(NULL,2A,"\x1b\]0;@ac06b2f727af:\x20/\x07root@ac06b2f727af:/#\x20")%r(
+SF:GenericLines,D6,"\x1b\]0;@ac06b2f727af:\x20/\x07root@ac06b2f727af:/#\x2
+SF:0\n\x1b\]0;@ac06b2f727af:\x20/\x07root@ac06b2f727af:/#\x20\n\x1b\]0;@ac
+SF:06b2f727af:\x20/\x07root@ac06b2f727af:/#\x20\n\x1b\]0;@ac06b2f727af:\x2
+SF:0/\x07root@ac06b2f727af:/#\x20\n\x1b\]0;@ac06b2f727af:\x20/\x07root@ac0
+SF:6b2f727af:/#\x20")%r(GetRequest,507,"\x1b\]0;@ac06b2f727af:\x20/\x07roo
+SF:t@ac06b2f727af:/#\x20GET\x20/\x20HTTP/1\.0\n<HTML>\n<HEAD>\n<TITLE>Dire
+SF:ctory\x20/</TITLE>\n<BASE\x20HREF=\"file:/\">\n</HEAD>\n<BODY>\n<H1>Dir
+SF:ectory\x20listing\x20of\x20/</H1>\n<UL>\n<LI><A\x20HREF=\"\./\">\./</A>
+SF:\n<LI><A\x20HREF=\"\.\./\">\.\./</A>\n<LI><A\x20HREF=\"\.dockerenv\">\.
+SF:dockerenv</A>\n<LI><A\x20HREF=\"bin/\">bin/</A>\n<LI><A\x20HREF=\"boot/
+SF:\">boot/</A>\n<LI><A\x20HREF=\"cdrom/\">cdrom/</A>\n<LI><A\x20HREF=\"co
+SF:re\">core</A>\n<LI><A\x20HREF=\"dev/\">dev/</A>\n<LI><A\x20HREF=\"etc/\
+SF:">etc/</A>\n<LI><A\x20HREF=\"home/\">home/</A>\n<LI><A\x20HREF=\"initrd
+SF:/\">initrd/</A>\n<LI><A\x20HREF=\"initrd\.img\">initrd\.img</A>\n<LI><A
+SF:\x20HREF=\"lib/\">lib/</A>\n<LI><A\x20HREF=\"lost%2Bfound/\">lost\+foun
+SF:d/</A>\n<LI><A\x20HREF=\"media/\">media/</A>\n<LI><A\x20HREF=\"mnt/\">m
+SF:nt/</A>\n<LI><A\x20HREF=\"nohup\.out\">nohup\.out</A>\n<LI><A\x20HREF=\
+SF:"opt/\">opt/</A>\n<LI><A\x20HREF=\"proc/\">proc/</A>\n<LI><A\x20HREF=\"
+SF:root/\">root/</A>\n<LI><A\x20HREF=\"sbin/\">sbin/</A>\n<LI><A\x20HREF=\
+SF:"srv/\">srv/</A>\n<LI><A\x20HREF=\"sys/\">sys/</A>\n<LI><A\x20HREF=\"tm
+SF:p/")%r(HTTPOptions,109,"\x1b\]0;@ac06b2f727af:\x20/\x07root@ac06b2f727a
+SF:f:/#\x20OPTIONS\x20/\x20HTTP/1\.0\nbash:\x20OPTIONS:\x20command\x20not\
+SF:x20found\n\x1b\]0;@ac06b2f727af:\x20/\x07root@ac06b2f727af:/#\x20\n\x1b
+SF:\]0;@ac06b2f727af:\x20/\x07root@ac06b2f727af:/#\x20\n\x1b\]0;@ac06b2f72
+SF:7af:\x20/\x07root@ac06b2f727af:/#\x20\n\x1b\]0;@ac06b2f727af:\x20/\x07r
+SF:oot@ac06b2f727af:/#\x20")%r(RTSPRequest,109,"\x1b\]0;@ac06b2f727af:\x20
+SF:/\x07root@ac06b2f727af:/#\x20OPTIONS\x20/\x20RTSP/1\.0\nbash:\x20OPTION
+SF:S:\x20command\x20not\x20found\n\x1b\]0;@ac06b2f727af:\x20/\x07root@ac06
+SF:b2f727af:/#\x20\n\x1b\]0;@ac06b2f727af:\x20/\x07root@ac06b2f727af:/#\x2
+SF:0\n\x1b\]0;@ac06b2f727af:\x20/\x07root@ac06b2f727af:/#\x20\n\x1b\]0;@ac
+SF:06b2f727af:\x20/\x07root@ac06b2f727af:/#\x20");
+MAC Address: B6:16:16:3C:EC:AA (Unknown)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.94SVN%E=4%D=11/12%OT=21%CT=1%CU=39474%PV=Y%DS=1%DC=D%G=Y%M=B616
+OS:16%TM=6AF5F641%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=10E%TI=Z%CI=Z%
+OS:TS=21)SEQ(SP=105%GCD=1%ISR=10E%TI=Z%CI=Z%II=I%TS=21)OPS(O1=M5B4ST11NWA%O
+OS:2=M5B4ST11NWA%O3=M5B4NNT11NWA%O4=M5B4ST11NWA%O5=M5B4ST11NWA%O6=M5B4ST11)
+OS:WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)ECN(R=Y%DF=Y%T=40%W=
+OS:FAF0%O=M5B4NNSNWA%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)
+OS:T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%
+OS:S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(
+OS:R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0
+OS:%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+Service Info: Hosts:  metasploitable.localdomain, irc.Metasploitable.LAN; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Nov 12 19:24:17 2026 -- 1 IP address (1 host up) scanned in 168.84 seconds
